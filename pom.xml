@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <vertx.version>3.1.0</vertx.version>
+        <vertx.version>3.3.0</vertx.version>
     </properties>
 
     <modules>
@@ -43,14 +43,17 @@
             <artifactId>vertx-hazelcast</artifactId>
             <version>${vertx.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast-cloud</artifactId>
+            <version>3.6.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast-all</artifactId>
+            <version>3.6.5</version>
+        </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>oss-snapshots</id>
-            <name>oss-snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-    </repositories>
 
 
 </project>
